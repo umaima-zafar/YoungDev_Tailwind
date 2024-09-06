@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Umaima Zafar | Front-end Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto&family=Tilt+Neon&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="circle.png" type="image/png">
+</head>
+
+<style>
+    #intro::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: url('bg.avif') center center / cover;
+        opacity: 1;
+        z-index: -1;
+    }
+
+    #occ-wrapper {
+        width: fit-content;
+    }
+
+    #occupation {
+        overflow: hidden;
+        white-space: nowrap;
+        animation: typing 1.5s steps(40, end);
+    }
+
+    @keyframes typing {
+        from {
+            width: 0;
+        }
+
+        to {
+            width: 100%;
+        }
+    }
+
+    .skill-item {
+        text-align: center;
+    }
+
+    .skill-bar {
+        transition: height 1s ease-out;
+    }
+
+    #html.active .skill-bar {
+        height: 260px;
+    }
+
+    #css.active .skill-bar {
+        height: 250px;
+    }
+
+    #js.active .skill-bar {
+        height: 200px;
+    }
+</style>
+
+<body class="h-screen bg-gray-100">
+
+    <!-- About me -->
+
+    <section id="intro" class="relative h-full flex items-center justify-center">
+        <img src="me2.jpeg" alt="Portrait of Umaima Zafar" class="h-[300px] rounded-2xl">
+
+        <div class="flex flex-col ml-10">
+            <h1 class="text-5xl font-bold text-white">Umaima Zafar</h1>
+
+            <div id="occ-wrapper">
+                <p class="text-2xl font-bold mt-5 text-pink-700 ml-0.5" id="occupation">Front-end Developer</p>
+            </div>
+
+            <p class="mt-5 text-xl ml-0.5 text-white">Passionate about building interactive web applications and
+                continuously learning new technologies.</p>
+        </div>
+    </section>
+
+    <!-- primary skillset -->
+
+    <h1 class="text-4xl font-bold text-pink-700 text-center h-[68px] pt-6">Primary Skill-set</h1>
+
+    <section
+        class="h-[400px] flex items-center justify-center gap-[20%] py-10 bg-gray-100 relative">
+
+        <div id="html" class="relative skill-item flex flex-col items-center h-[300px]">
+            <div class="absolute bottom-[50px] skill-bar h-0 w-10 bg-orange-600 transition-all duration-1000"></div>
+            <p class="absolute mt-4 text-lg font-semibold text-gray-800 bottom-0">HTML</p>
+        </div>
+
+        <div id="css" class="relative skill-item flex flex-col items-center h-[300px]">
+            <div class="absolute bottom-[50px] skill-bar h-0 w-10 bg-blue-700 transition-all duration-1000"></div>
+            <p class="absolute text-lg font-semibold text-gray-800 bottom-0">CSS</p>
+        </div>
+
+        <div id="js" class="relative skill-item flex flex-col items-center h-[300px]">
+            <div class="absolute bottom-[50px] skill-bar h-0 w-10 bg-yellow-400 transition-all duration-1000"></div>
+            <p class="absolute text-lg font-semibold text-gray-800 bottom-0">JavaScript</p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+
+    <section id="projects" class="py-12">
+        <h2 class="text-4xl font-bold text-pink-700 text-center mb-8">Projects</h2>
+        <div class="flex flex-wrap justify-center gap-[10%]">
+
+            <!-- Project 1 -->
+            <div class="w-[270px] bg-white shadow-lg rounded-lg overflow-hidden card">
+                <img src="Capture2.JPG" alt="Project 1" class="w-full h-40 object-cover">
+                <div class="p-4">
+                    <h3 class="text-2xl font-bold text-gray-800">Shoe Store Website</h3>
+                    <p class="mt-2 text-gray-600">Fully Rrsponsive website with proper cart functionalities</p>
+                    <a href="" class="block mt-4 text-pink-700 font-semibold">View Project</a>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="w-[270px] bg-white shadow-lg rounded-lg overflow-hidden card">
+                <img src="Capture3.JPG" alt="Project 2" class="w-full h-40 object-cover">
+                <div class="p-4">
+                    <h3 class="text-2xl font-bold text-gray-800">AI Chatbot</h3>
+                    <p class="mt-2 text-gray-600">Fully Rrsponsive chatbot that uses Google Gemini API</p>
+                    <a href="" class="block mt-4 text-pink-700 font-semibold">View Project</a>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="w-[270px] bg-white shadow-lg rounded-lg overflow-hidden card">
+                <img src="Capture.JPG" alt="Project 3" class="w-full h-40 object-cover">
+                <div class="p-4">
+                    <h3 class="text-2xl font-bold text-gray-800">Code Editor</h3>
+                    <p class="mt-2 text-gray-600">Code editor for HTML, CSS, and JavaScript plus preview feature</p>
+                    <a href="" class="block mt-4 text-pink-700 font-semibold">View Project</a>
+                </div>
+            </div>
+    </section>
+
+    <!-- additional skills -->
+
+    <section>
+        <h1 class="text-4xl font-bold text-pink-700 text-center m-6">Additional Skill-set</h1>
+
+        <ul class="flex items-center justify-center h-[200px] gap-[10%]">
+            <li class="text-xl bg-blue-100 p-3 rounded-3xl font-semibold">AI for Faster Coding</li>
+            <li class="text-xl bg-red-100 p-3 rounded-3xl font-semibold">Canva</li>
+            <li class="text-xl bg-orange-100 p-3 rounded-3xl font-semibold">MS Word</li>
+            <li class="text-xl bg-purple-100 p-3 rounded-3xl font-semibold">MS PowerPoint</li>
+        </ul>
+    </section>
+
+    <!-- contact me -->
+
+    <section class="bg-black p-10 flex gap-[26%]">
+        <p class="text-white"><i class="fa-regular fa-envelope text-pink-600 mr-2"></i> umaimazafar62@gmail.com</p>
+        <p class="text-white"><i class="fa-brands fa-instagram text-pink-600 mr-2"></i> @UmaimaZafar</p>
+        <p class="text-white"><i class="fa-brands fa-facebook text-pink-600 mr-2"></i> UmaimaZafar</p>
+    </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const skillItems = document.querySelectorAll('.skill-item');
+
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                    } else {
+                        entry.target.classList.remove('active');
+                    }
+                });
+            }, { threshold: 0.5 });
+
+            skillItems.forEach(item => {
+                observer.observe(item);
+            });
+
+        });
+
+    </script>
+
+</body>
+
+</html>
